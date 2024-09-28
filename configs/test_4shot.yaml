@@ -1,0 +1,39 @@
+# ------ PATH ------
+root_path: 'E:\DATASETS\test_data\images'
+labels_file: 'labels\test_data_labels.csv'
+train_file: 'datasplit\train.txt'
+test_file: 'datasplit\test.txt'
+val_file: 'datasplit\val.txt'
+cache_file: 'datasplit\cache.txt'
+
+# ------ Load Cache and Features ------
+load_cache: False
+load_pre_feat: False
+
+# load_cache: True
+# load_pre_feat: True
+
+
+# ------ Hyperparamters ------
+search_hp: True
+# search_hp: False
+
+search_scale: [7, 3]
+search_step: [200, 20]
+
+init_beta: 1
+init_alpha: 1.17
+
+
+
+# ------ Basic Config ------
+shots: 2
+backbone: 'ViT-B/16'
+num_classes: 9
+template: "a photo of "
+dataset: 'test_data'
+
+lr: 0.001
+augment_epoch: 10
+train_epoch: 20
+batch_size: 16
